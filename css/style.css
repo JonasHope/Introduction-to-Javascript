@@ -1,0 +1,76 @@
+.mainClass {
+    max-width: 600px;
+    margin: auto;
+}
+
+.submitVal {
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;;
+    color:#fff;
+    width: 50%;
+}
+
+body {
+    font-family: Helvetica, sans-serif, arial;
+    padding: 30px;
+    background-color: rgb(159, 226, 253);
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+input {
+    font-size: 15px;
+    padding: 10px;
+    width: 95%;
+    margin: 10px 0px;
+}
+
+button {
+    background-color: rgb(89, 89, 255);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px
+}
+
+.error {
+    display:none;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.details {
+    display:flex;
+    flex-wrap:wrap;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.box {
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    background: white;
+    border: 1px solid rgb(42, 206, 247);
+    border-radius: 10px;
+}
+
+.box img {
+    width: 100%
+}
+
+.indexError {
+    font-size: 30px;
+    color: red;
+    background-color: #fff;
+    padding: 30px;
+    margin:auto;
+    border: 1px solid red ;
+}

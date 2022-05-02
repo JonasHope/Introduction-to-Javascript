@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact</title>
+</head>
+<body>
+    <main class="mainClass">
+        <div id="skjema"></div>
+            <form>
+                <div>
+                    <label>Name (required)</label>
+                    <input name="fullName" id="fullName" />
+                    <div id="nameError" class="error">Please enter your full name</div>
+                </div>
+                <div>
+                    <label>Subject (min length 10)</label>
+                    <input name="subject" id="subject" />
+                    <div id="subjectError" class="error">Minimum length of 10</div>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input name="email" id="email" />
+                    <div id="emailError" class="error">Enter a valid email</div>
+                </div>
+                <div>
+                    <label>Address (min length 25)</label>
+                    <input name="address" id="address" />
+                    <div id="addressError" class="error">Minimum length of 25</div>
+                </div>
+                <button>Submit</button>
+            </form>
+    </main>
+    <script src="js/contact.js"></script>
+</body>
+</html>
