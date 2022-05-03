@@ -46,7 +46,7 @@ button {
     margin-bottom: 20px;
 }
 
-.details {
+.product {
     display:flex;
     flex-wrap:wrap;
     max-width: 1200px;
