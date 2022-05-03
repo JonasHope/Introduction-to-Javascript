@@ -21,11 +21,10 @@ async function api() {
                                   <h5>${drinks.strGlass}</h5>
                                   </a>`
         }
-
     }
     catch (error) {
-        console.log("Something went wrong!", error)
-        product.innerHTML = `<div class="indexError">Something went wrong!</div>`, error
+        console.log("Something went wrong!", error);
+        product.innerHTML = `<div class="indexError">Something went wrong!</div>`, error;
     }
 }
 api()
