@@ -19,8 +19,8 @@ async function getDrinks() {
         createHtml(marga);
     }
     catch(error) {
-        console.log(error, "upsi, something went wrong, try again.");
-        details.innerHTML = "upsi, something went wrong, try again."
+        console.log(error, "whoops, something went wrong, try again.");
+        details.innerHTML = "whoops, something went wrong, try again."
     }
 }
 
