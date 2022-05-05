@@ -11,6 +11,8 @@ async function api() {
 
         const results = json.drinks;
 
+        product.innerHTML = "";
+
         for (let i = 0; i < 6; i++) {
             const drinks = results[i];
             console.log([drinks])
