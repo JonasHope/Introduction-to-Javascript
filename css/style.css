@@ -128,12 +128,16 @@ p {
 }
 
 nav {
-    padding: 20px;
+    padding: 10px;
     margin: 20px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    background-color: rgb(97, 172, 83);
     border-radius: 10px;
+}
+
+hr {
+border: 10px solid rgb(97, 172, 83);
+border-radius: 10px;
 }
 
 /* From https://loading.io/css/ */

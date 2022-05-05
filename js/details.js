@@ -20,6 +20,7 @@ async function getDrinks() {
     }
     catch(error) {
         console.log(error, "upsi, something went wrong, try again.");
+        details.innerHTML = "upsi, something went wrong, try again."
     }
 }
 
