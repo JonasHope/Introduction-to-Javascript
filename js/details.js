@@ -1,5 +1,5 @@
 const details = document.querySelector(".detailContainer");
-const back = document.querySelector(".back-b")
+const back = document.querySelector(".back-button");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -20,14 +20,16 @@ async function getDrinks() {
     }
     catch(error) {
         console.log(error, "whoops, something went wrong, try again.");
-        details.innerHTML = "whoops, something went wrong, try again."
+        details.innerHTML = `<div class="error-json">whoops, something went wrong, try again.</div>`;
     }
 }
 
 getDrinks();
 
+back.innerHTML = `<button onclick="history.back()" class="back-b">Back to last page </button>`;
 
 function createHtml(marga) {
+    document.title = `${marga.strDrink}`;
     details.innerHTML = `<div class="box">
                             <h1>${marga.strDrink ?? ``}</h1>
                             <img class="img-detail" src="${marga.strDrinkThumb ?? ``}" alt"${marga.strDrink ?? ``}" />
@@ -52,5 +54,5 @@ function createHtml(marga) {
                             </div>
                             <hr>
                             <p>${marga.strInstructions ?? ``}</p>
-                         </div>`
-}
+                         </div>`;
+};
